@@ -200,6 +200,23 @@ button {
   margin-bottom: 6px;
 }
 
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: waveAnimation 2.4s infinite ease-in-out;
+}
+
+@keyframes waveAnimation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .lead {
   max-width: 650px;
   color: var(--text-muted);
@@ -380,12 +397,14 @@ button {
 
 .case-visual small {
   position: absolute;
-  top: 20px;
-  left: 22px;
+  top: 22px;
+  left: 24px;
   font-size: 9px;
   letter-spacing: 1.3px;
   font-weight: 700;
   text-transform: uppercase;
+  z-index: 5;
+  color: var(--text-subtle);
 }
 
 .rapido {
@@ -393,13 +412,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 55px 30px 25px;
 }
 
 .rapido img {
-  height: 90%;
-  max-width: 65%;
+  height: auto;
+  max-height: 385px;
+  max-width: 62%;
   object-fit: contain;
   filter: drop-shadow(20px 25px 25px rgba(0, 0, 0, 0.12));
+  margin-top: 15px;
 }
 
 .meta {
@@ -1153,6 +1175,19 @@ footer {
 @media (max-width: 520px) {
   .principles {
     grid-template-columns: 1fr;
+  }
+
+  .case-visual {
+    min-height: 340px;
+  }
+
+  .rapido {
+    padding: 50px 20px 20px;
+  }
+
+  .rapido img {
+    max-height: 280px;
+    max-width: 80%;
   }
 
   .research-row {

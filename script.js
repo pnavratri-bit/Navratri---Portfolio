@@ -167,18 +167,46 @@ const caseStudyData = {
       <div style="margin-bottom: 22px;">
         <img src="paytm-logo.svg" alt="Paytm" style="height: 28px; width: auto;">
       </div>
+      <h3>Achievement</h3>
+      <p>Top 10 finalist among 1000+ designers in the Paytm Design Competition 2026.</p>
+
       <h3>Problem</h3>
-      <p>Sending money can involve finding the recipient, entering the amount and navigating several steps. A user conversation in the presentation described this friction in a time-sensitive situation.</p>
-      
-      <h3>Research insight</h3>
-      <p>“People don’t think in UPI IDs. They think in people.” The concept lets users express the payment naturally while the product handles the typing and prepares the transaction.</p>
-      
+      <p>Sometimes you need to send money but cannot use your phone properly. Your hands may be busy, you may be stuck in traffic, or caught up in the chaos at home. Today you must open Paytm, go to Pay Anyone, search for the contact, enter the amount and confirm.</p>
+
+      <h3>Research goal</h3>
+      <p>To understand why sending money becomes hard in moments when the user cannot use their phone properly.</p>
+
+      <h3>Method</h3>
+      <p>An informal conversation with a friend who was stuck in traffic and struggled to send money. I asked her what happened and where she got stuck.</p>
+
+      <h3>Finding</h3>
+      <p>She was in traffic and busy, and did not have the time to go through the usual steps (open Paytm, go to Pay Anyone, search for the contact, type the amount) to send money that was urgent.</p>
+
+      <h3>Insight</h3>
+      <p>The hard part is not the payment itself, it is getting to the payment. When a user's hands or attention are occupied, search and typing become the barrier. This can happen in traffic, in household chaos, or in any busy moment. “People don’t think in UPI IDs. They think in people.”</p>
+
+      <h3>Limitation</h3>
+      <p>This is one conversation, so it shows a real friction point but not how widespread it is. I plan to validate it with more users.</p>
+
       <h3>Product concept</h3>
-      <p>Two entry points were explored: an in-app microphone inside Pay Anyone and OS-level voice through Google Assistant.</p>
-      
+      <p>Instead of searching and typing, the user just says it: “Send 1000 to Mummy.” The product finds the contact and opens the payment screen, so no separate search is needed.</p>
+      <p>Two entry points were explored:</p>
+      <ul>
+        <li><strong>In-app microphone</strong> inside Pay Anyone</li>
+        <li><strong>OS-level voice</strong>, for example “Hey Google, send 1000 to Mummy on Paytm”</li>
+      </ul>
+
       <h3>Trust and safety</h3>
-      <p>Voice does not directly send money. Recipient and amount are shown for review, with an edit option, followed by fingerprint authentication or PIN fallback.</p>
-      
+      <p>Voice does not directly send money. The user always goes through these steps:</p>
+      <ul>
+        <li><strong>Review:</strong> the recipient and amount are shown, so the user can confirm it is the right person and the right amount.</li>
+        <li><strong>Authenticate:</strong> biometric or PIN, as in the BHIM app.</li>
+        <li><strong>My design decision:</strong> biometric works for payments up to 10,000. For anything above 10,000, the user must enter the PIN first.</li>
+      </ul>
+
+      <h3>Fallback</h3>
+      <p>If the voice is not heard or the contact is not fetched, the user gets a clear message and a retry option.</p>
+
       <h3>Outcome</h3>
       <div class="flow">
         <span>Speak</span>

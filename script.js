@@ -68,14 +68,77 @@ const caseStudyData = {
     title: "Clean Basket",
     desc: "A service-product case study for a laundry experience.",
     html: `
-      <h3>Problem space</h3>
-      <p>The concept targets hostel/PG residents and working professionals who may not have enough time to wash clothes themselves.</p>
-      
+      <h3>Project goal</h3>
+      <p>The goal of this project was to design a simple and user-friendly laundry pickup and delivery app that helps users easily book laundry services, schedule pickups, compare nearby providers, and track their orders with a smooth and an efficient experience.</p>
+
+      <h3>Project statement</h3>
+      <p>Laundry service apps often fail users in small but critical ways. Booking flows are inconsistent, pricing is unclear until after service completion, and authentication methods can lock users out entirely if their assumed access method (like OTP) isn't available. During competitor analysis of UClean, this became evident: the app supports only phone number + OTP login, with no alternative - creating a real accessibility barrier for users facing network issues or an unrecharged number.</p>
+
+      <h3>Objective</h3>
+      <ul>
+        <li>Reduce login drop-off by offering multiple authentication methods (phone/email + password, alongside OTP)</li>
+        <li>Provide upfront, transparent pricing before a booking is confirmed</li>
+        <li>Simplify pickup scheduling to fit users' existing routines rather than rigid time slots</li>
+        <li>Build trust through clear order tracking at every stage</li>
+        <li>Maintain a consistent, predictable visual system across the entire booking journey</li>
+      </ul>
+
+      <h3>Primary user</h3>
+      <ul>
+        <li>Working professionals</li>
+        <li>Students, and busy families who need a fast, dependable way to outsource laundry without adding friction to their day.</li>
+      </ul>
+
+      <h3>Research &amp; discovery</h3>
+      <h3>Primary research (informal interviews)</h3>
+      <p>I spoke informally with 4-5 people who regularly use laundry services. Recurring pain points included:</p>
+      <ul>
+        <li><strong>Scheduling friction</strong> - pickup slots didn't match users' actual work hours</li>
+        <li><strong>Trust deficit</strong> - fear of clothes being damaged or lost, with no visible accountability</li>
+        <li><strong>Pricing opacity</strong> - final costs weren't clear until after the service was booked</li>
+      </ul>
+
+      <h3>Competitor analysis - UClean</h3>
+      <p>I explored UClean as a direct competitor. A key usability gap surfaced: the app's login screen supports only phone number + OTP, with no fallback option. If a user's number has no balance or network access is poor, they cannot log in at all - a significant accessibility failure for a service targeting budget-conscious, busy users.</p>
+
+      <h3>Design decision</h3>
+      <p>To address this, I designed the login screen with both Phone/Email and Password fields, along with Signup and Forgot Password flows - giving users a reliable path into the app regardless of OTP availability.</p>
+
+      <h3>Persona: Roshini Patil</h3>
+      <p>Student, exam preparation. Preparing for an important exam, most of her time goes into studying. Everyday tasks like laundry are hard to fit in.</p>
+      <p>26 years old &middot; M.A degree &middot; Delhi &middot; Joyful, Sensitive, Lazy</p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Quick, low effort laundry</li>
+        <li>Reliable, no follow up needed</li>
+        <li>Fast booking process</li>
+        <li>Trustworthy</li>
+        <li>Nearest provider</li>
+        <li>Provider contact number</li>
+      </ul>
+
+      <h3>Frustrations</h3>
+      <ul>
+        <li>Rigid pickup slots</li>
+        <li>Unclear order tracking</li>
+        <li>Pricing not shown up front</li>
+        <li>Burnt and faded clothes</li>
+        <li>Too much time consuming</li>
+        <li>No details about providers</li>
+      </ul>
+
+      <h3>Wants &amp; needs</h3>
+      <ul>
+        <li>Flexible scheduling around her free time</li>
+        <li>Clear tracking without repeated follow up</li>
+        <li>Transparent pricing before booking</li>
+        <li>Rating necessary</li>
+        <li>Talk to provider before order</li>
+      </ul>
+
       <h3>Journey thinking</h3>
       <p>I worked through the service journey from choosing a service to provider details, booking, order tracking and payment states.</p>
-      
-      <h3>Research-to-design link</h3>
-      <p>The project helped me practice turning a broad service problem into clearer user flows, information structure, wireframes, prototype interactions and UI decisions.</p>
     `
   },
   world: {

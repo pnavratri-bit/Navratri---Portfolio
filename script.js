@@ -15,12 +15,50 @@ const caseStudyData = {
       <h3>Problem framing</h3>
       <p>The starting point was a real-world constraint: a user may need a ride at the exact moment their internet connection is weak or unavailable.</p>
       
-      <h3>Research direction</h3>
-      <p>I explored the behaviour and failure points around network loss, including booking initiation, OTP verification, confirmation, failed requests and connectivity recovery.</p>
-      
+      <h3>Research goal</h3>
+      <p>To understand what happens to the Rapido booking experience when mobile data is weak or unavailable, and where users get stuck.</p>
+
+      <h3>Context</h3>
+      <p>I have lived in Madhya Pradesh, where network drops are common during the rainy season, foggy winters and in forest areas. In these conditions the app does not update, the OTP does not arrive, and the user gets no rider updates. They are left unsure whether the booking went through.</p>
+
+      <h3>Method</h3>
+      <p>Informal conversations with 2-3 people who face unreliable connectivity, along with my own experience of weak networks in MP.</p>
+
+      <h3>Participants</h3>
+      <p>A mix of everyday users, such as a student, a woman commuter and an office-goer.</p>
+
+      <h3>Findings</h3>
+      <ul>
+        <li><strong>Network bars do not mean working data.</strong> In many places the phone shows network, but mobile data does not work, so booking is not possible.</li>
+        <li><strong>No network means no booking.</strong> The app offers no alternative, so the journey stops.</li>
+        <li><strong>No balance creates the same barrier.</strong> When users have no balance or data left, booking through Rapido becomes difficult.</li>
+      </ul>
+
+      <h3>Insight</h3>
+      <p>The barrier is not only weak network. It is any situation where mobile data is unavailable: weak signal, network bars with no working data, or no balance. The app assumes data works, so the user has no way to book.</p>
+
+      <h3>Limitation</h3>
+      <p>This is a small, early-stage sample. It guided problem framing, and I plan to validate it with more users.</p>
+
       <h3>Product opportunity</h3>
-      <p>Instead of treating no network as a dead end, the product could offer a fallback path using OTP/SMS while keeping the user informed about system status.</p>
-      
+      <p>Instead of treating no network as a dead end, the product could offer a fallback path using SMS while keeping the user informed about system status.</p>
+
+      <h3>Concept: offline booking through SMS</h3>
+      <p>When mobile data is unavailable, the user can still book a ride through text messages.</p>
+      <ul>
+        <li>The booking confirmation and OTP arrive by SMS.</li>
+        <li>Rider updates (accepted, on the way, arrived) also arrive by SMS.</li>
+        <li>The user shares the OTP with the rider to start the ride.</li>
+      </ul>
+
+      <h3>Edge cases explored</h3>
+      <ul>
+        <li>No cellular signal at all</li>
+        <li>Delayed SMS</li>
+        <li>No balance, where receiving SMS may work but sending may not</li>
+        <li>Rider verification without the app, through rider name and vehicle number in the SMS</li>
+      </ul>
+
       <h3>What the interface communicates</h3>
       <p>Simple actions, clear status and minimal interaction are prioritized because the user is already operating under a constrained condition.</p>
     `

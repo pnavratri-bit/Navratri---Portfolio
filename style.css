@@ -1051,6 +1051,21 @@ footer {
   line-height: 1.7;
 }
 
+.modal-box ul {
+  margin: 0 0 4px;
+  padding-left: 22px;
+}
+
+.modal-box li {
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.modal-box li strong {
+  color: var(--text-dark);
+}
+
 .flow {
   display: flex;
   flex-wrap: wrap;

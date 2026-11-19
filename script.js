@@ -168,7 +168,7 @@ const caseStudyData = {
         <img src="paytm-logo.svg" alt="Paytm" style="height: 28px; width: auto;">
       </div>
       <h3>Achievement</h3>
-      <p>Top 10 finalist among 500+ designers in the Paytm Design Competition 2026.</p>
+      <p>Top 10 finalist among 1000+ designers in the Paytm Design Competition 2026.</p>
 
       <h3>Problem</h3>
       <p>Sometimes you need to send money but cannot use your phone properly. Your hands may be busy, you may be stuck in traffic, or caught up in the chaos at home. Today you must open Paytm, go to Pay Anyone, search for the contact, enter the amount and confirm.</p>
@@ -201,7 +201,7 @@ const caseStudyData = {
       <ul>
         <li><strong>Review:</strong> the recipient and amount are shown, so the user can confirm it is the right person and the right amount.</li>
         <li><strong>Authenticate:</strong> biometric or PIN, as in the BHIM app.</li>
-        <li><strong>Limit rule:</strong> biometric works for payments up to 10,000. For anything above 10,000, the user must enter the PIN first.</li>
+        <li><strong>My design decision:</strong> biometric works for payments up to 10,000. For anything above 10,000, the user must enter the PIN first.</li>
       </ul>
 
       <h3>Fallback</h3>

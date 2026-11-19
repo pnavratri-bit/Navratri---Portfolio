@@ -25,7 +25,7 @@ const caseStudyData = {
       <p>Informal conversations with 2-3 people who face unreliable connectivity, along with my own experience of weak networks in MP.</p>
 
       <h3>Participants</h3>
-      <p>A mix of everyday users, such as a student, a woman commuter and an office-goer.</p>
+      <p>A mix of everyday users, such as a student, a woman commuter and an office girl.</p>
 
       <h3>Findings</h3>
       <ul>
